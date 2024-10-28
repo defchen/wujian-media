@@ -73,7 +73,7 @@ export default class ViewerInfoVideoTitleBanner extends ViewerInfoTitleBanner {
                 <MediaSaveButton />
               ) : null}
 
-              {!this.props.allowDownload || !MemberContext._currentValue.can.downloadMedia ? null : !this
+              {MemberContext._currentValue.is.anonymous || !this.props.allowDownload || !MemberContext._currentValue.can.downloadMedia ? null : !this
                 .downloadLink ? (
                 <VideoMediaDownloadLink />
               ) : (

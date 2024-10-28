@@ -255,5 +255,5 @@ export function SidebarNavigationMenu() {
     return items.length ? <NavigationMenuList key="admin" items={formatItems(items)} /> : null;
   }
 
-  return [MainMenuFirstSection(), MainMenuSecondSection(), UserMenuSection(), CustomMenuSection(), AdminMenuSection()];
+  return [MainMenuFirstSection(), MainMenuSecondSection(), UserMenuSection(), AdminMenuSection()];
 }

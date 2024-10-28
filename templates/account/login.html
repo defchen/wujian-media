@@ -6,9 +6,9 @@
 <div class="user-action-form-wrap">
     <div class="user-action-form-inner">
 
-		<h1>Sign In</h1>
+		<h1>登录</h1>
 
-		<p>If you have not created an account yet, then please <a href="{{ signup_url }}">sign up</a> first.</p>
+		<p>如果没有账号请先注册账号或者找管理员添加 <a href="{{ signup_url }}">注册</a></p>
 
 		<form class="login" method="POST" action="{% url 'account_login' %}">
 		  {% csrf_token %}
@@ -16,8 +16,8 @@
 		  {% if redirect_field_value %}
 		  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
 		  {% endif %}
-		  <button class="primaryAction" type="submit">Sign In</button>
-		  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">Forgot Password?</a>
+		  <button class="primaryAction" type="submit">登录</button>
+		  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">忘记密码?</a>
 		</form>
 
     </div>

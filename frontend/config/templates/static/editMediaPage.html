@@ -5,11 +5,11 @@
     <div class="page-main-inner">
       <div class="user-action-form-wrap">
         <div class="user-action-form-inner">
-          <h1>Edit Media</h1>
+          <h1>编辑媒体</h1>
 
           <form enctype="multipart/form-data" action="" method="post" class="post-form">
             <div id="div_id_title" class="control-group">
-              <label for="id_title" class="control-label"> Title </label>
+              <label for="id_title" class="control-label"> 标题 </label>
               <div class="controls">
                 <input
                   type="text"
@@ -19,11 +19,11 @@
                   class="textinput textInput"
                   id="id_title"
                 />
-                <p id="hint_id_title" class="help-block">media title</p>
+                <p id="hint_id_title" class="help-block">媒体标题</p>
               </div>
             </div>
             <div id="div_id_category" class="control-group">
-              <label for="id_category" class="control-label"> Category </label>
+              <label for="id_category" class="control-label"> 分类 </label>
               <div class="controls">
                 <select name="category" class="selectmultiple" id="id_category" multiple="">
                   <option value="1">Art</option>
@@ -33,24 +33,24 @@
                   <option value="5">Music</option>
                   <option value="6">TV</option>
                 </select>
-                <p id="hint_id_category" class="help-block">Media can be part of one or more categories</p>
+                <p id="hint_id_category" class="help-block">媒体可以被归为一类或者多个类别</p>
               </div>
             </div>
             <div id="div_id_new_tags" class="control-group">
-              <label for="id_new_tags" class="control-label"> Tags </label>
+              <label for="id_new_tags" class="control-label"> 标签 </label>
               <div class="controls">
                 <input type="text" name="new_tags" class="textinput textInput" id="id_new_tags" />
-                <p id="hint_id_new_tags" class="help-block">a comma separated list of new tags.</p>
+                <p id="hint_id_new_tags" class="help-block">用英文逗号分隔多个标签</p>
               </div>
             </div>
             <div id="div_id_add_date" class="control-group">
-              <label for="id_add_date" class="control-label"> Date produced </label>
+              <label for="id_add_date" class="control-label"> 发布日期 </label>
               <div class="controls">
                 <input type="text" name="add_date" value="2021-01-01 00:00:01" class="datetimeinput" id="id_add_date" />
               </div>
             </div>
             <div id="div_id_uploaded_poster" class="control-group">
-              <label for="id_uploaded_poster" class="control-label"> Upload image </label>
+              <label for="id_uploaded_poster" class="control-label"> 上传图片 </label>
               <div class="controls">
                 <input
                   type="file"
@@ -59,11 +59,11 @@
                   class="clearablefileinput"
                   id="id_uploaded_poster"
                 />
-                <p id="hint_id_uploaded_poster" class="help-block">This image will characterize the media</p>
+                <p id="hint_id_uploaded_poster" class="help-block">此图片用来快捷预览识别视频</p>
               </div>
             </div>
             <div id="div_id_description" class="control-group">
-              <label for="id_description" class="control-label"> Description </label>
+              <label for="id_description" class="control-label"> 描述 </label>
               <div class="controls">
                 <textarea name="description" cols="40" rows="10" class="textarea" id="id_description"></textarea>
               </div>
@@ -78,7 +78,7 @@
                   <option value="public" selected="">Public</option>
                   <option value="unlisted">Unlisted</option>
                 </select>
-                <p id="hint_id_state" class="help-block">state of Media</p>
+                <p id="hint_id_state" class="help-block">媒体状态</p>
               </div>
             </div>
             <div id="div_id_enable_comments" class="control-group">
@@ -91,9 +91,9 @@
                     id="id_enable_comments"
                     checked=""
                   />
-                  Enable comments
+                  标记评论
                 </label>
-                <p id="hint_id_enable_comments" class="help-block">Whether comments will be allowed for this media</p>
+                <p id="hint_id_enable_comments" class="help-block">是否打开评论区</p>
               </div>
             </div>
             <div id="div_id_thumbnail_time" class="control-group">
@@ -120,13 +120,13 @@
                     id="id_allow_download"
                     checked=""
                   />
-                  Allow download
+                  允许下载
                 </label>
-                <p id="hint_id_allow_download" class="help-block">Whether option to download media is shown</p>
+                <p id="hint_id_allow_download" class="help-block">是否显示可下载</p>
               </div>
             </div>
 
-            <button class="primaryAction" type="submit">Update Media</button>
+            <button class="primaryAction" type="submit">上传媒体</button>
           </form>
         </div>
       </div>

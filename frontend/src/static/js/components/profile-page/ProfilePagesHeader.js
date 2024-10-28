@@ -426,10 +426,10 @@ export default function ProfilePagesHeader(props) {
     ProfilePageStore.get('author-data').username === MemberContext._currentValue.username;
   const userCanEditProfile =
     userIsAuthor || (!MemberContext._currentValue.is.anonymous && MemberContext._currentValue.can.editProfile);
-  const userCanDeleteProfile =
-    userIsAdmin ||
-    userIsAuthor ||
-    (!MemberContext._currentValue.is.anonymous && MemberContext._currentValue.can.deleteProfile);
+  const userCanDeleteProfile = false;
+    // userIsAdmin ||
+    // userIsAuthor ||
+    // (!MemberContext._currentValue.is.anonymous && MemberContext._currentValue.can.deleteProfile);
 
   function updateProfileNavTopPosition() {
     positions.profileHeaderTop = profilePageHeaderRef.current.offsetTop;
